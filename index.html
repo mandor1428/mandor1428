@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Bel | Consultant Cybersécurité & Développeur Freelance</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --primary-color: #58a6ff;
+            --accent-color: #2ea043;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #30363d;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        header h2 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #2c974b;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .service-card h4 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: rgba(88, 166, 255, 0.1);
+            color: var(--primary-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid rgba(88, 166, 255, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-top: 1px solid #30363d;
+            color: var(--text-muted);
+        }
+        
+        .contact-info {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Charles Bel</h1>
+        <h2>Expert en Cybersécurité & Développeur Full-Stack | Indépendant</h2>
+        <a href="#contact" class="btn">Me contacter</a>
+    </header>
+
+    <div class="container">
+        <!-- Section À Propos -->
+        <section id="about">
+            <h3>À propos de moi</h3>
+            <p>Étudiant ingénieur en 4ème année spécialisé en sécurité informatique à l'INSA Centre-Val de Loire, et actuellement en échange académique à la Czech Technical University (CTU) de Prague. J'aborde les défis technologiques avec un esprit analytique poussé et une forte culture du résultat.</p>
+            <p>Fort de mon expérience en entreprise, notamment au sein du groupe Framatome, je maîtrise la sécurisation des systèmes complexes, la rétro-ingénierie et l'administration réseau. En parallèle, je développe des solutions logicielles performantes et déploie des infrastructures sur mesure. Mon objectif : vous accompagner dans la sécurisation de vos actifs et l'optimisation de vos outils numériques.</p>
+        </section>
+
+        <!-- Section Services -->
+        <section id="services">
+            <h3>Mes Services Freelance</h3>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <h4>Audit de Sécurité & Pentesting</h4>
+                    <p>Évaluation rigoureuse de la sécurité de vos applications web et réseaux. Découverte de vulnérabilités, analyse des protocoles et fourniture de recommandations stratégiques pour blinder votre infrastructure contre les attaques.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Reverse Engineering & Analyse</h4>
+                    <p>Analyse approfondie de fichiers binaires et de malwares. Expertise en cryptographie appliquée (AES), détection de stéganographie et compréhension du comportement d'applications complexes à l'aide d'outils comme IDA Pro.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Développement & Automatisation</h4>
+                    <p>Création d'outils sur mesure et de scripts pour automatiser vos tâches chronophages. Développement backend et desktop en Python, C/C++ et PowerShell, ainsi que la création d'applications mobiles via React Native.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Administration Système & DevOps</h4>
+                    <p>Déploiement et gestion de serveurs Linux/Windows. Conteneurisation de vos applications avec Docker, gestion de bases de données (SQL, Oracle) et configuration avancée d'infrastructures cloud ou d'hébergement de médias (Serveurs NAS, Jellyfin, FFmpeg).</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Compétences Techniques -->
+        <section id="skills">
+            <h3>Stack Technique</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C / C++</span>
+                <span class="skill-tag">Reverse Engineering (IDA)</span>
+                <span class="skill-tag">Bash / PowerShell</span>
+                <span class="skill-tag">Linux (Debian/Arch)</span>
+                <span class="skill-tag">Windows Server</span>
+                <span class="skill-tag">Docker / Conteneurisation</span>
+                <span class="skill-tag">Cryptographie (AES)</span>
+                <span class="skill-tag">React Native / JS</span>
+                <span class="skill-tag">Bases de données (SQL)</span>
+                <span class="skill-tag">Réseaux (DNS, Routage)</span>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact">
+            <h3>Démarrer un projet</h3>
+            <div class="contact-info">
+                <p>Basé à Prague et disponible pour des missions en remote (France & International).</p>
+                <p>Que ce soit pour sécuriser votre infrastructure réseau, auditer votre application ou développer un outil d'automatisation sur mesure, je suis à votre disposition pour discuter de vos besoins techniques.</p>
+                <br>
+                <a href="mailto:contact@charlesbel.fr" class="btn">Envoyer un e-mail</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Charles Bel. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
