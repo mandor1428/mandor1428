@@ -78,16 +78,6 @@
 
 <br/>
 
-## 📊 GitHub Stats
-
-<a href="https://github.com">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=USERNAME&show_icons=true&theme=react"/>
-</a>
-
-<a href="https://github.com">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=USERNAME&layout=compact&theme=react"/>
-</a>
-
 <br/>
 
 ## 🏆 Motto
